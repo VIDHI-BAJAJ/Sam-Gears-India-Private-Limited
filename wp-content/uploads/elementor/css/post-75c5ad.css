@@ -56,7 +56,27 @@
       transform: translateX(100%);
       animation-timing-function: ease;
     }
-   }.elementor-75 .elementor-element.elementor-element-14772e4f>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-image:url(../../2023/05/hero.jpg);background-position:center center;background-repeat:no-repeat;background-size:cover}
+   }
+   @media(max-width: 800px){
+      .elementor-75 .elementor-element.elementor-element-14772e4f:not(.elementor-motion-effects-element-type-background), .slider {
+         overflow: hidden;
+         width: 100vw;
+         height: 50vh;
+         position: relative;
+     }
+   }
+   @media (max-width: 1024px) and (min-width: 768px) {
+      .elementor-75 .elementor-element.elementor-element-8be9f3 {
+          width: 100%;
+      }
+  }
+  @media (max-width: 1024px) and (min-width: 768px) {
+   .elementor-75 .elementor-element.elementor-element-376da643 {
+       width: 100%;
+       font-size: 20px;
+   }
+}
+   .elementor-75 .elementor-element.elementor-element-14772e4f>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-image:url(../../2023/05/hero.jpg);background-position:center center;background-repeat:no-repeat;background-size:cover}
 .elementor-75 .elementor-element.elementor-element-14772e4f{transition:background .3s,border .3s,border-radius .3s,box-shadow .3s;margin-top:0;margin-bottom:0;padding:0}
 .elementor-75 .elementor-element.elementor-element-14772e4f>.elementor-background-overlay{transition:background .3s,border-radius .3s,opacity .3s}.elementor-75 .elementor-element.elementor-element-2cf15410>.elementor-element-populated{padding:0}.elementor-75 .elementor-element.elementor-element-7a222cf2:not(.elementor-motion-effects-element-type-background),.elementor-75 .elementor-element.elementor-element-7a222cf2>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-color:#fff}.elementor-75 .elementor-element.elementor-element-7a222cf2{transition:background .3s,border .3s,border-radius .3s,box-shadow .3s;padding:60px 0}.elementor-75 .elementor-element.elementor-element-7a222cf2>
 .elementor-background-overlay{border-radius :.3s;opacity : .3s}
