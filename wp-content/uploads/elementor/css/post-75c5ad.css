@@ -12,35 +12,41 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 90%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     animation: slider 12.5s infinite;
    }
     
    .slider .slide:nth-child(1) {
-      background-image: url('../../2023/05/banner1.png');
+      background-image: url('../../../../Images/banner.jpg');
       animation-delay: 0s;
+      width: 800px;
    }
    
    .slider .slide:nth-child(2) {
-      background-image: url('../../2023/05/hero.jpg');
+      background-image: url('../../../../Images/banner1.png');
       animation-delay: -2.5s;
+      width: 800px;
    }
    
    .slider .slide:nth-child(3) {
-      background-image: url('../../2023/05/banner2.jpg');
+      background-image: url('../../../../Images/banner3.png');
       animation-delay: -5s;
+      width: 900px;
    }
    
    .slider .slide:nth-child(4) {
-      background-image: url('../../2023/05/banner3.jpg');
+      background-image: url('../../../../Images/banner4.png');
       animation-delay: -7.5s;
+      width: 800px;
    }
    
    .slider .slide:nth-child(5) {
-      background-image: url('../../2023/05/banner4.jpeg');
+      background-image: url('../../../../Images/banner5.png');
       animation-delay: -10s;
+      width: 800px;
+    /* margin-left: 30px; */
    }
    
    @keyframes slider {
@@ -64,7 +70,44 @@
          height: 50vh;
          position: relative;
      }
+     .slider .slide:nth-child(1) {
+      background-image: url(../../../../Images/banner.jpg);
+      animation-delay: 0s;
+      width: 500px;
+  }
+  .slider .slide:nth-child(2) {
+   background-image: url(../../../../Images/banner1.png);
+   animation-delay: -2.5s;
+   width: 400px;
+}
+.slider .slide:nth-child(3) {
+   background-image: url(../../../../Images/banner3.png);
+   animation-delay: -5s;
+   width: 500px;
+}
+.slider .slide:nth-child(4) {
+   background-image: url(../../../../Images/banner4.png);
+   animation-delay: -7.5s;
+   width: 400px;
+}
+.slider .slide:nth-child(5) {
+   background-image: url(../../../../Images/banner5.png);
+   animation-delay: -10s;
+   width: 400px;
+}
    }
+   @media (max-width: 350px) {
+      .slider .slide:nth-child(1) {
+          background-image: url(../../../../Images/banner.jpg);
+          animation-delay: 0s;
+          width: 200px;
+      }
+      .slider .slide:nth-child(3) {
+         background-image: url(../../../../Images/banner3.png);
+         animation-delay: -5s;
+         width: 300px;
+     }
+  }
    @media (max-width: 1024px) and (min-width: 768px) {
       .elementor-75 .elementor-element.elementor-element-8be9f3 {
           width: 100%;
