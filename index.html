@@ -350,8 +350,19 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		position: fixed;
 		z-index: 100;
 	}
-	.elementor-testimonial__name_year{
-		font-size: 20px;
+	.card {
+		background-color: white;
+		padding: 20px;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		width: 350px; /* Fixed width */
+		height: 300px; /* Fixed height */
+		color: #333;
+		flex: 1 1 auto; 
+		box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 </style>
 <link rel="icon" href="Images/logo.png" sizes="32x32" />
@@ -452,24 +463,23 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
 				<ul id="menu-1-4abdbb18" class="elementor-nav-menu">
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-75 current_page_item menu-item-329"><a href="index.html" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
-<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-405"><a href="#" class="elementor-item elementor-item-anchor">Listings</a>
-<ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-404"><a href="residential-listings/index.html" class="elementor-sub-item">Residential &#038; Commercial</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="sections-listings/index.html" class="elementor-sub-item">Sections &#038; Land</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a href="residential-rentals/index.html" class="elementor-sub-item">Rentals</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Business Listings</a></li>
-</ul>
-</li> -->
-<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3341">
-	<a href="#" class="elementor-item elementor-item-anchor">Services</a>
-<ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3343"><a href="./buy-with-us/index.html" class="elementor-sub-item">Buy With Us</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3342"><a href="./sell-with-us/index.html" class="elementor-sub-item">Sell With Us</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-475"><a href="./services/index.html" class="elementor-sub-item">Property Management</a></li>
-</ul>
-</li> -->
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3341">
 	<a href="./about/index.html" class="elementor-item elementor-item-anchor">About Us</a>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-405">
+	<a href="#" class="elementor-item elementor-item-anchor">our Products</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-404"><a href="residential-listings/index.html" class="elementor-sub-item">Transmission Gears & Shafts</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="sections-listings/index.html" class="elementor-sub-item">Tractor Gear</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Tractor Spindles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Tractor Axle</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a href="residential-rentals/index.html" class="elementor-sub-item">Automotive Shafts</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Automotive Inner Column</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Nut Assembly</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Hydraulic Filter</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Hydraulic Pumps</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Tissue Culture Plants</a></li>
+</ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-346"><a href="./contact-us/index.html" class="elementor-item">Contact Us</a></li>
 </ul>			
@@ -482,15 +492,21 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<ul id="menu-2-4abdbb18" class="elementor-nav-menu">
 					<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-75 current_page_item menu-item-329">
 		<a href="index.html" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
-<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-405">
-	<a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Listings</a>
-<ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-404"><a href="residential-listings/index.html" class="elementor-sub-item" tabindex="-1">Residential &#038; Commercial</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="sections-listings/index.html" class="elementor-sub-item" tabindex="-1">Sections &#038; Land</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a href="residential-rentals/index.html" class="elementor-sub-item" tabindex="-1">Rentals</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item" tabindex="-1">Business Listings</a></li>
-</ul>
-</li> -->
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-405">
+			<a href="#" class="elementor-item elementor-item-anchor">our Products</a>
+		<ul class="sub-menu elementor-nav-menu--dropdown">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-404"><a href="residential-listings/index.html" class="elementor-sub-item">Transmission Gears & Shafts</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="sections-listings/index.html" class="elementor-sub-item">Tractor Gear</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Tractor Spindles</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Tractor Axle</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a href="residential-rentals/index.html" class="elementor-sub-item">Automotive Shafts</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Automotive Inner Column</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Nut Assembly</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Hydraulic Filter</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Hydraulic Pumps</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Tissue Culture Plants</a></li>
+		</ul>
+		</li>
 <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3341"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Services</a>
 <ul class="sub-menu elementor-nav-menu--dropdown">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3343"><a href="./buy-with-us/index.html" class="elementor-sub-item" tabindex="-1">Buy With Us</a></li>
@@ -776,7 +792,7 @@ business opportunities</h4>		</div>
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-14452303 elementor-invisible elementor-widget elementor-widget-heading" data-id="14452303" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">hear our</h3></div>
+			<!-- <h3 class="elementor-heading-title elementor-size-default">hear our</h3></div> -->
 				</div>
 				<div class="elementor-element elementor-element-6963adac elementor-invisible elementor-widget elementor-widget-heading" data-id="6963adac" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -788,17 +804,23 @@ business opportunities</h4>		</div>
 			<div class="elementor-swiper">
 			<div class="elementor-main-swiper swiper">
 				<div class="swiper-wrapper">
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
+				
+						  <div class="swiper-slide">
+							<div class="card">
+							  <div class="elementor-testimonial">
+							    <div class="elementor-testimonial__content">
+				             	<div class="elementor-testimonial__text">
 						"Sam Gears (India) Pvt. Ltd specializes in both manufacturing and exporting high-quality transmission gears, shafts, and automotive components. We  production techniques."</div>
 									</div>
 						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Nature of Business</span></cite>			</div>
-		</div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Nature of Business</span></cite>		
 								</div>
+								</div>
+							</div>
+							</div>
+				
 											<div class="swiper-slide">
+												<div class="card">
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
@@ -806,9 +828,11 @@ business opportunities</h4>		</div>
 									</div>
 						<div class="elementor-testimonial__footer">
 								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">NUMBER OF EMPLOYEES</span></cite></div>
-		</div>
+								</div>
+								</div>
 								</div>
 											<div class="swiper-slide">
+												<div class="card">
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
@@ -817,8 +841,10 @@ business opportunities</h4>		</div>
 						<div class="elementor-testimonial__footer">
 								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">YEAR OF ESTABLISHMENT</span></cite></div>
 		</div>
+		</div>
 								</div>
 											<div class="swiper-slide">
+												<div class="card">
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
@@ -827,18 +853,22 @@ business opportunities</h4>		</div>
 						<div class="elementor-testimonial__footer">
 								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Legal Status of Firm</span></cite></div>
 		</div>
+		</div>
 								</div>
 											<div class="swiper-slide">
+												<div class="card">
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
 						"Sam Gears (India) Pvt. Ltd generates an annual turnover ranging from Rs. 50 Lakh to 1 Crore. This financial performance reflects our strong market presence and consistent demand for our products."</div>
 									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Annual Turnover</span></cite>			</div>
-		</div>
+									<div class="elementor-testimonial__footer">
+										<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Annual Turnover</span></cite>			</div>
+				</div>
+				</div>
 								</div>
 											<div class="swiper-slide">
+												<div class="card">
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
@@ -847,8 +877,10 @@ business opportunities</h4>		</div>
 						<div class="elementor-testimonial__footer">
 								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Import Export Code</span></cite></div>
 		</div>
+		</div>
 								</div>
 											<div class="swiper-slide">
+												<div class="card">
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
@@ -857,10 +889,11 @@ business opportunities</h4>		</div>
 						<div class="elementor-testimonial__footer">
 								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">GST Number</span></cite>			</div>
 		</div>
+		</div>
 								</div>
 									</div>
-															<div class="swiper-pagination"></div>
-																<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						                 <div class="swiper-pagination"></div>
+							     <div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
 							<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-left" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>							<span class="elementor-screen-only">Previous</span>
 						</div>
 						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
@@ -874,7 +907,8 @@ business opportunities</h4>		</div>
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-2ba3cba5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="2ba3cba5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		
+		<section class="elementor-section elementor-top-section elementor-element elementor-element-2ba3cba5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="2ba3cba5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2d002596" data-id="2d002596" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
