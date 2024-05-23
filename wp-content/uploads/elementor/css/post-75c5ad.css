@@ -71,27 +71,27 @@
          position: relative;
      }
      .slider .slide:nth-child(1) {
-      background-image: url(../../../../Images/banner.jpg);
+      background-image: url(../../../../Images/banner.png);
       animation-delay: 0s;
       width: 500px;
   }
   .slider .slide:nth-child(2) {
-   background-image: url(../../../../Images/banner1.png);
+   background-image: url(../../../../Images/banner.png);
    animation-delay: -2.5s;
    width: 400px;
 }
 .slider .slide:nth-child(3) {
-   background-image: url(../../../../Images/banner3.png);
+   background-image: url(../../../../Images/banner.png);
    animation-delay: -5s;
    width: 500px;
 }
 .slider .slide:nth-child(4) {
-   background-image: url(../../../../Images/banner4.png);
+   background-image: url(../../../../Images/banner.png);
    animation-delay: -7.5s;
    width: 400px;
 }
 .slider .slide:nth-child(5) {
-   background-image: url(../../../../Images/banner5.png);
+   background-image: url(../../../../Images/banner.png);
    animation-delay: -10s;
    width: 400px;
 }
@@ -103,7 +103,7 @@
           width: 200px;
       }
       .slider .slide:nth-child(3) {
-         background-image: url(../../../../Images/banner3.png);
+         background-image: url(../../../../Images/banner.png);
          animation-delay: -5s;
          width: 300px;
      }
@@ -119,7 +119,7 @@
        font-size: 20px;
    }
 }
-   .elementor-75 .elementor-element.elementor-element-14772e4f>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-image:url(../../2023/05/hero.jpg);background-position:center center;background-repeat:no-repeat;background-size:cover}
+   .elementor-75 .elementor-element.elementor-element-14772e4f>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-image:url(../../../../Images/banner.png);background-position:center center;background-repeat:no-repeat;background-size:cover}
 .elementor-75 .elementor-element.elementor-element-14772e4f{transition:background .3s,border .3s,border-radius .3s,box-shadow .3s;margin-top:0;margin-bottom:0;padding:0}
 .elementor-75 .elementor-element.elementor-element-14772e4f>.elementor-background-overlay{transition:background .3s,border-radius .3s,opacity .3s}.elementor-75 .elementor-element.elementor-element-2cf15410>.elementor-element-populated{padding:0}.elementor-75 .elementor-element.elementor-element-7a222cf2:not(.elementor-motion-effects-element-type-background),.elementor-75 .elementor-element.elementor-element-7a222cf2>.elementor-motion-effects-container>.elementor-motion-effects-layer{background-color:#fff}.elementor-75 .elementor-element.elementor-element-7a222cf2{transition:background .3s,border .3s,border-radius .3s,box-shadow .3s;padding:60px 0}.elementor-75 .elementor-element.elementor-element-7a222cf2>
 .elementor-background-overlay{border-radius :.3s;opacity : .3s}
