@@ -19,33 +19,33 @@
    }
     
    .slider .slide:nth-child(1) {
-      background-image: url('../../../../Images/banner.jpg');
+      background-image: url('../../../../Images/banner.png');
       animation-delay: 0s;
-      width: 800px;
+      width: 100%;
    }
    
    .slider .slide:nth-child(2) {
-      background-image: url('../../../../Images/banner1.png');
+      background-image: url('../../../../Images/banner_1.png');
       animation-delay: -2.5s;
-      width: 800px;
+      width: 100%;
    }
    
    .slider .slide:nth-child(3) {
-      background-image: url('../../../../Images/banner3.png');
+      background-image: url('../../../../Images/banner_2.png');
       animation-delay: -5s;
-      width: 900px;
+      width: 100%;
    }
    
    .slider .slide:nth-child(4) {
-      background-image: url('../../../../Images/banner4.png');
+      background-image: url('../../../../Images/banner_3.png');
       animation-delay: -7.5s;
-      width: 800px;
+      width: 100%;
    }
    
    .slider .slide:nth-child(5) {
-      background-image: url('../../../../Images/banner5.png');
+      background-image: url('../../../../Images/banner_4.png');
       animation-delay: -10s;
-      width: 800px;
+      width: 100%;
     /* margin-left: 30px; */
    }
    
@@ -76,22 +76,22 @@
       width: 500px;
   }
   .slider .slide:nth-child(2) {
-   background-image: url(../../../../Images/banner.png);
+   background-image: url(../../../../Images/banner_1.png);
    animation-delay: -2.5s;
    width: 400px;
 }
 .slider .slide:nth-child(3) {
-   background-image: url(../../../../Images/banner.png);
+   background-image: url(../../../../Images/banner_2.png);
    animation-delay: -5s;
    width: 500px;
 }
 .slider .slide:nth-child(4) {
-   background-image: url(../../../../Images/banner.png);
+   background-image: url(../../../../Images/banner_3.png);
    animation-delay: -7.5s;
    width: 400px;
 }
 .slider .slide:nth-child(5) {
-   background-image: url(../../../../Images/banner.png);
+   background-image: url(../../../../Images/banner_4.png);
    animation-delay: -10s;
    width: 400px;
 }
@@ -103,7 +103,7 @@
           width: 200px;
       }
       .slider .slide:nth-child(3) {
-         background-image: url(../../../../Images/banner.png);
+         background-image: url(../../../../Images/banner_2.png);
          animation-delay: -5s;
          width: 300px;
      }
